@@ -13,6 +13,7 @@ Vagrant.configure("2") do |config|
   # Every Vagrant development environment requires a box. You can search for
   # boxes at https://vagrantcloud.com/search.
   config.vm.box = "debian/bullseye64"
+  config.vm.hostname = "keyserver"
 
   # Disable automatic box update checking. If you disable this, then
   # boxes will only be checked for updates when the user runs
@@ -25,6 +26,7 @@ Vagrant.configure("2") do |config|
   # NOTE: This will enable public access to the opened port
   # config.vm.network "forwarded_port", guest: 80, host: 8080
   config.vm.network "forwarded_port", guest: 11370, host: 11370
+  config.vm.network "forwarded_port", guest: 11371, host: 11371
   config.vm.network "forwarded_port", guest: 80, host: 8080
 
   # Create a forwarded port mapping which allows access to a specific port

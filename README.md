@@ -1,1 +1,1 @@
-Simple local keyserver with sks, based on a debian/bullseye vagrant box.
+Simple local keyserver with hockeypuck, based on a debian/bullseye vagrant box.
